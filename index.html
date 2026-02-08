@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poloko | Faith. Favour. Power.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font settings to ensure crisp rendering */
+        body {
+            font-family: 'Inter', sans-serif;
+            font-feature-settings: "cv11", "ss01";
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-accent {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fafaf9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d6d3d1;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a29e;
+        }
+        
+        /* Gradient Animation for the 'Fire' effect */
+        @keyframes subtle-pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+        }
+        .animate-pulse-slow {
+            animation: subtle-pulse 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-orange-200 selection:text-orange-950">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0a0a0a]/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-semibold tracking-tight uppercase text-white">
+                Poloko<span class="text-orange-500">.</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm text-stone-400 hover:text-white transition-colors duration-200">About</a>
+                <a href="#book" class="text-sm text-stone-400 hover:text-white transition-colors duration-200">The Book</a>
+                <a href="#speaking" class="text-sm text-stone-400 hover:text-white transition-colors duration-200">Speaking</a>
+            </div>
+
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-stone-950 bg-white rounded-full hover:bg-stone-200 transition-all duration-200 shadow-sm hover:shadow-glow">
+                Book Poloko
+            </a>
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-white">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" height="24"></iconify-icon>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-40 px-6 overflow-hidden bg-[#0a0a0a]">
+        
+        <!-- Background Ambient Effects -->
+        <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+        <div class="absolute -top-[20%] left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-orange-600/20 blur-[120px] rounded-full pointer-events-none animate-pulse-slow"></div>
+        <div class="absolute top-[20%] right-0 w-[400px] h-[400px] bg-red-900/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center relative z-10">
+            
+            <!-- Text Content -->
+            <div class="lg:col-span-7 flex flex-col items-start space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-200 backdrop-blur-sm">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                    </span>
+                    Now booking 2024 Keynotes
+                </div>
+                
+                <!-- Modified Hero Text -->
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[1.1] text-white">
+                    Faith. <br>
+                    Favour. <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-orange-100 to-white serif-accent italic font-normal pb-2">Power.</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-stone-400 max-w-lg leading-relaxed font-light">
+                    Transforming leadership through radical clarity. Helping audacious entrepreneurs find their ground and set the world on fire, responsibly.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-stone-950 bg-white rounded-lg hover:bg-stone-200 transition-all duration-200 shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)]">
+                        Start the Conversation
+                    </a>
+                    <a href="#about" class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-stone-300 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-200 backdrop-blur-sm">
+                        Watch Keynote Reel <iconify-icon icon="solar:play-circle-linear" class="ml-2 text-lg"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Small credibility indicator -->
+                <div class="pt-4 flex items-center gap-4 text-sm text-stone-500 font-light border-t border-white/10 w-full max-w-md mt-4">
+                    <span class="pt-4">Featured in:</span>
+                    <div class="pt-4 flex gap-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                        <iconify-icon icon="solar:star-fall-minimalistic-2-linear" class="text-xl text-white"></iconify-icon>
+                        <iconify-icon icon="solar:cup-star-linear" class="text-xl text-white"></iconify-icon>
+                        <iconify-icon icon="solar:medal-ribbon-star-linear" class="text-xl text-white"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Visual -->
+            <div class="lg:col-span-5 relative group">
+                <!-- Abstract Glow behind image -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-orange-500 to-purple-500 rounded-2xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+                
+                <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-[#1c1917] border border-white/10 shadow-2xl shadow-orange-900/20">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10 opacity-80"></div>
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" alt="Poloko Speaking" class="object-cover w-full h-full opacity-90 grayscale group-hover:scale-105 transition-transform duration-1000 ease-out">
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute top-6 right-6 z-20">
+                        <div class="w-12 h-12 rounded-full border border-white/20 bg-white/10 backdrop-blur-md flex items-center justify-center text-white">
+                            <iconify-icon icon="solar:arrow-right-up-linear" class="text-xl"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <!-- Quote Overlay -->
+                    <div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+                        <p class="text-2xl font-serif italic text-white leading-tight mb-2">"Chaos is just clarity waiting to be forged."</p>
+                        <p class="text-xs font-medium tracking-widest uppercase text-orange-400">Poloko M.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="border-b border-stone-200 bg-white relative z-20">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <p class="text-center text-xs font-medium text-stone-400 uppercase tracking-widest mb-8">Trusted by global organisations</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale">
+                <span class="text-xl font-bold tracking-tight text-stone-800 font-serif">Forbes</span>
+                <span class="text-lg font-bold tracking-widest text-stone-800 uppercase">Ted<span class="text-red-600">x</span></span>
+                <span class="text-xl font-semibold tracking-tight text-stone-800">BusinessDay</span>
+                <span class="text-xl font-bold italic text-stone-800">Entrepreneur</span>
+                <div class="flex items-center gap-1 font-bold text-lg text-stone-800">
+                    <iconify-icon icon="solar:verified-check-bold" class="text-stone-800"></iconify-icon> News24
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-stone-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-stone-900">
+                        From humble beginnings to global stages.
+                    </h2>
+                    <div class="w-12 h-px bg-stone-300"></div>
+                    <p class="text-stone-600 leading-relaxed font-light">
+                        My journey wasn't linear. Born in South Africa and shaped by the complexities of a changing world, I learned early that resilience is a practice, not a trait.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed font-light">
+                        Today, I bridge the gap between corporate strategy and human potential. My mission is to help individuals and organizations strip away the noise and reconnect with their core purpose.
+                    </p>
+                    
+                    <div class="pt-4 grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-3xl font-medium text-stone-900">10+</div>
+                            <div class="text-sm text-stone-500 mt-1">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-medium text-stone-900">50k+</div>
+                            <div class="text-sm text-stone-500 mt-1">Lives Impacted</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 pt-8">
+                    <div class="absolute top-0 left-0 w-24 h-24 border-t border-l border-stone-300 rounded-tl-3xl"></div>
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop" alt="Poloko Portrait" class="relative z-10 rounded-lg shadow-lg aspect-[4/5] object-cover grayscale">
+                    <div class="absolute -bottom-6 -right-6 bg-stone-900 text-stone-50 p-6 rounded-lg max-w-[200px] shadow-xl z-20">
+                        <p class="text-xs font-light italic leading-relaxed">"Poloko brings a calmness to the room that is both rare and commanding."</p>
+                        <p class="text-[10px] mt-2 text-stone-400 uppercase tracking-wider">— Event Organizer, CT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Showcase -->
+    <section id="book" class="py-24 px-6 bg-stone-900 text-stone-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Book Mockup -->
+                <div class="flex justify-center lg:justify-end order-2 lg:order-1">
+                    <div class="relative group cursor-pointer">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-stone-700 to-stone-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative w-[300px] h-[450px] bg-[#e5e5e0] rounded-r-md rounded-l-sm shadow-2xl flex flex-col justify-between p-8 text-stone-900 transform group-hover:-translate-y-2 transition-transform duration-500 ease-out">
+                            <div class="border border-stone-800/20 h-full p-6 flex flex-col items-center text-center justify-between">
+                                <div class="text-xs tracking-[0.2em] uppercase font-medium">National Bestseller</div>
+                                <div>
+                                    <h3 class="text-3xl font-serif italic mb-2">The Quiet <br>Revolution</h3>
+                                    <p class="text-xs tracking-widest uppercase mt-4">Poloko M.</p>
+                                </div>
+                                <div class="w-8 h-8 rounded-full border border-stone-900 flex items-center justify-center">
+                                    <iconify-icon icon="solar:star-linear" class="text-sm"></iconify-icon>
+                                </div>
+                            </div>
+                            <div class="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-black/20 to-transparent pointer-events-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 space-y-8">
+                    <span class="text-orange-400 text-xs font-medium tracking-widest uppercase">Latest Release</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-white">
+                        The Quiet Revolution.
+                    </h2>
+                    <p class="text-stone-300 text-lg font-light leading-relaxed max-w-md">
+                        In a world screaming for attention, learn how to command respect through substance. This book serves as a manifesto for intentional living and sustainable success.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-stone-300 font-light">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-orange-400 mt-1 text-lg"></iconify-icon>
+                            <span>Mastering the mindset of longevity</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-stone-300 font-light">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-orange-400 mt-1 text-lg"></iconify-icon>
+                            <span>Building authority without arrogance</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-stone-300 font-light">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-orange-400 mt-1 text-lg"></iconify-icon>
+                            <span>Navigating modern leadership challenges</span>
+                        </li>
+                    </ul>
+                    <div class="pt-4">
+                        <button class="px-8 py-3 bg-white text-stone-900 rounded-lg hover:bg-stone-100 transition-colors font-medium text-sm">
+                            Get Your Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking / Value Pillars -->
+    <section id="speaking" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-stone-900 mb-4">Speaking & Workshops</h2>
+                <p class="text-stone-500 font-light">
+                    Tailored engagements designed to shift perspectives and ignite action.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group p-8 rounded-2xl border border-stone-100 bg-stone-50 hover:border-stone-200 hover:shadow-lg hover:shadow-stone-200/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-white rounded-lg border border-stone-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <iconify-icon icon="solar:microphone-3-linear" class="text-2xl text-stone-800" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-3">Keynote Speaking</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-6">
+                        Compelling talks on leadership, resilience, and the power of purpose. Perfect for conferences and corporate retreats.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-stone-900 hover:text-stone-600 transition-colors">
+                        View Topics <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group p-8 rounded-2xl border border-stone-100 bg-stone-50 hover:border-stone-200 hover:shadow-lg hover:shadow-stone-200/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-white rounded-lg border border-stone-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <iconify-icon icon="solar:users-group-two-rounded-linear" class="text-2xl text-stone-800" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-3">Leadership Workshops</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-6">
+                        Interactive sessions designed to unearth potential within teams. Practical tools for managing change and growth.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-stone-900 hover:text-stone-600 transition-colors">
+                        Learn More <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group p-8 rounded-2xl border border-stone-100 bg-stone-50 hover:border-stone-200 hover:shadow-lg hover:shadow-stone-200/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-white rounded-lg border border-stone-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <iconify-icon icon="solar:ruler-pen-linear" class="text-2xl text-stone-800" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-stone-900 mb-3">Brand Strategy</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed mb-6">
+                        Consulting for entrepreneurs looking to build personal brands rooted in authenticity rather than trends.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-stone-900 hover:text-stone-600 transition-colors">
+                        Start Strategy <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Divider -->
+    <section class="py-20 px-6 bg-stone-900 text-stone-400 text-center">
+        <div class="max-w-4xl mx-auto">
+            <iconify-icon icon="solar:infinity-linear" class="text-4xl mb-6 opacity-50"></iconify-icon>
+            <h2 class="text-2xl md:text-3xl font-light italic serif-accent leading-relaxed text-stone-200">
+                "We don't just speak to be heard. We speak to be understood, to move mountains, and to pave the way for those coming after us."
+            </h2>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="py-24 px-6 bg-stone-50">
+        <div class="max-w-3xl mx-auto text-center space-y-8">
+            <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-stone-900">
+                Let's create something meaningful.
+            </h2>
+            <p class="text-stone-500 text-lg font-light">
+                Whether for a keynote, a workshop, or a collaboration, I’d love to hear from you.
+            </p>
+            
+            <form class="mt-10 space-y-4 max-w-md mx-auto text-left">
+                <div>
+                    <label for="email-contact" class="sr-only">Email address</label>
+                    <input type="email" id="email-contact" placeholder="Enter your email address" class="w-full px-4 py-3 bg-white border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-400 transition-all placeholder:text-stone-400 text-stone-900">
+                </div>
+                <button type="submit" class="w-full py-3 px-6 bg-stone-900 text-white font-medium rounded-lg hover:bg-stone-800 transition-colors flex items-center justify-center gap-2">
+                    Send Inquiry <iconify-icon icon="solar:letter-linear" class="text-lg"></iconify-icon>
+                </button>
+            </form>
+
+            <div class="pt-8 flex justify-center gap-6">
+                <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors">
+                    <iconify-icon icon="solar:camera-linear" width="24" height="24"></iconify-icon>
+                </a>
+                <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors">
+                    <iconify-icon icon="solar:plain-2-linear" width="24" height="24"></iconify-icon>
+                </a>
+                <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors">
+                    <iconify-icon icon="solar:link-circle-linear" width="24" height="24"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Newsletter Signup Section -->
+    <section class="py-24 px-6 border-t border-stone-200 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative overflow-hidden rounded-3xl bg-stone-50 border border-stone-100 p-8 md:p-16">
+                <!-- Decorative Elements -->
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-orange-100 rounded-full blur-3xl opacity-50"></div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-stone-200/50 rounded-tr-full"></div>
+
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="inline-flex items-center gap-2 mb-4 text-orange-600">
+                            <iconify-icon icon="solar:mailbox-linear" class="text-xl"></iconify-icon>
+                            <span class="text-xs font-semibold tracking-widest uppercase">The Inner Circle</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-semibold tracking-tight text-stone-900 mb-4">
+                            Insights for the <span class="serif-accent italic font-normal text-stone-600">spirit</span> and strategy.
+                        </h3>
+                        <p class="text-stone-500 font-light leading-relaxed max-w-md">
+                            Join 15,000+ subscribers receiving weekly wisdom on merging faith, favour, and personal power. No noise, just signal.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
+                        <form class="space-y-4">
+                            <div class="flex flex-col space-y-2">
+                                <label for="newsletter-email" class="text-xs font-medium text-stone-900 uppercase tracking-wider ml-1">Email Address</label>
+                                <input type="email" id="newsletter-email" placeholder="you@company.com" class="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all placeholder:text-stone-400 text-stone-900">
+                            </div>
+                            <button type="submit" class="w-full py-3 px-6 bg-stone-900 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center gap-2 group">
+                                Subscribe Free 
+                                <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon>
+                            </button>
+                            <p class="text-center text-[10px] text-stone-400">
+                                Zero spam. Unsubscribe at any time.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-stone-200 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+            <div>
+                <a href="#" class="text-lg font-semibold tracking-tight uppercase text-stone-900">
+                    Poloko<span class="text-stone-400">.</span>
+                </a>
+                <p class="mt-4 text-stone-500 text-sm max-w-xs font-light">
+                    Empowering voices, building leaders, and grounding ambition in truth. Based in South Africa, available globally.
+                </p>
+            </div>
+            
+            <div class="flex gap-16">
+                <div class="space-y-4">
+                    <h4 class="text-sm font-semibold text-stone-900">Explore</h4>
+                    <ul class="space-y-2 text-sm text-stone-500">
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">Books</a></li>
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">Speaking</a></li>
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-sm font-semibold text-stone-900">Legal</h4>
+                    <ul class="space-y-2 text-sm text-stone-500">
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">Privacy</a></li>
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">Terms</a></li>
+                        <li><a href="#" class="hover:text-stone-900 transition-colors">Media Kit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-stone-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-stone-400">
+            <p>&copy; 2024 Poloko. All rights reserved.</p>
+            <p class="mt-2 md:mt-0 font-light">Designed with purpose.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
